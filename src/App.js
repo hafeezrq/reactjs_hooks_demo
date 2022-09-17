@@ -1,4 +1,5 @@
 import Accordion from './components/Accordion';
+import Dropdown from './components/Dropdown';
 import Search from './components/Search';
 
 const items = [
@@ -15,13 +16,28 @@ const items = [
     contents: 'You use React by creating components.',
   },
 ];
+const options = [
+  {
+    label: 'Red Color',
+    value: 'red',
+  },
+  {
+    label: 'Green Color',
+    value: 'green',
+  },
+  {
+    label: 'Blue Color',
+    value: 'blue',
+  },
+];
 
 // eslint-disable-next-line
 export default () => {
   return (
     <div>
       {/* <Accordion items={items} /> */}
-      <Search />
+      {/* <Search /> */}
+      <Dropdown options={options} />
     </div>
   );
 };
