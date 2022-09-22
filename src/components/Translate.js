@@ -16,8 +16,11 @@ const options = [
     label: 'Urdu',
     value: 'ur',
   },
+  {
+    label: 'French',
+    value: 'fr',
+  },
 ];
-// AIzaSyCHUCmpR7cT_yDFHC98CZJy2LTms-IwDlM
 
 const Translate = () => {
   const [language, setLanguage] = useState(options[0]);
